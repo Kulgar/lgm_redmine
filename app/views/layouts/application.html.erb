@@ -17,8 +17,8 @@
       </main>
     </div>
 
-    <footer>
-      Copyright <%= Time.current.year %>
-    </footer>
+    <%#= render "footer" %>
+    <%= render "shared/footer", footer_class: "main-footer" %>
+    <%# render partial: { "shared/footer" }, locals: { footer_class: "main-footer" } %>
   </body>
 </html>
