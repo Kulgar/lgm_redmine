@@ -92,29 +92,35 @@ p.delete # explain diff
 
 ### Views and controllers
 
-* Explain routes.rb, show rails routes / rails routes -g, add a resources, show difference with only, except. Add some member/collection routes. Explain admin namespace
-
+* Explain routes.rb, show rails routes / rails routes -g, add a resources, show differences with only, except. Add some member/collection routes. Explain admin namespace
 * Create the index / new / show / edit / update / form logic
 * Show byebug
 
-* Explain how CSS / JS work while at it, display a logo somewhere
+**Exercice 3**
+
 * Let them handle the logic for tasks
-* Ask them to add a file input in the form and display that attachment in the show page
+
+**Solution**
+* Explain scaffold, use it to solve the exercice
 
 ### Associations
 
-* Explain associations, associate user and the other data, add a "private" part (only viewable by current user)
+* Explain associations, associate project and tasks
 * Add tasks number in projects index, explain N+1 problem and its solution (2 solutions, with includes & counter_cache)
-* Explain scaffold, create comments (associated to tasks)
 * Explain what it creates by default (and rails formats)
 
 * Explain rubygems, Gemfile & bundler, launch doc server: `gem server`, if no doc: `gem rdoc --all`
 * Install devise gem (for authentication), add a "admin" boolean
+* add a "private" part (only viewable by current user)
 * Install letter opener
 * Let them install devise masquerade, and create a user index with the masquerade link
 
 * We now have authentication
 * Add some authed part, with some secret data (see everything, even the !published)
+
+* Ask them to add a file input in the form and display that attachment in the show page
+* Explain how JS work, display a logo somewhere
+
 
 ## Some other topics:
 
