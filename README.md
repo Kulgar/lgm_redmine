@@ -27,15 +27,17 @@ These can be used with the `rails new` command:
 * Discover Rails architecture
 
 * launch server: `rails server` or just `rails s` (options: -p 3001 -b 0.0.0.0)
+* Define main route
+* Create a controller and an action
 * Create a view
+* Explain rescue_from
 * Generate a model, explain what it does (with a published thing)
 * Explain validations, show example in console: `rails console` or just `rails c`
 * Explain callbacks, show an example
 * Explain scopes, show an example
-* Let them generate another model with a validation
-
 * Explain migrations, generate a new migration to edit previously created table
-* Create a controller, explain rescue_from
+* Let them generate another model with a validation and a scope
+
 * Let them create the tasks controller
 * Explain how the layout works, show content_for? / content_for & yield(...)
 
