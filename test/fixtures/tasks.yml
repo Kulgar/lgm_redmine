@@ -2,10 +2,12 @@
 
 one:
   title: MyString
-  content: MyText
   priority: 1
+  content: MyText
+  project: one
 
 two:
   title: MyString
-  content: MyText
   priority: 1
+  content: MyText
+  project: two

@@ -14,6 +14,7 @@ end
   Project.create(title: "Project #{i}", archive: [true, false].sample, created_at: (2.days.ago.to_date..Date.today).to_a.sample)
 end
 
+project_ids = Project.pluck(:id)
 5.times do |i|
-  Task.create(title: "Task #{i}", priority: (0..5).to_a.sample)
+  Task.create(title: "Task #{i}", priority: (0..5).to_a.sample, project_id: project_ids.sample)
 end
