@@ -77,13 +77,21 @@ p.delete # explain diff
 * one named most_importants (show tasks with priority 4 or 5)
 * one named by_priority (to order tasks by priority)
 
-### Views and controllers
+### Layout and styling
 
 * Explain how the layout works, show content_for? / content_for & yield(...)
 * Replace with a @variable
 * Add some style
 * Explain helpers
 * Explain partials
+
+**Exercice 2**
+
+* Create a partial for the footer
+* Add some styling to the footer (nothing too fancy)
+
+### Views and controllers
+
 * Explain routes.rb, show rails routes / rails routes -g, add a resources, show difference with only, except. Add some member/collection routes. Explain admin namespace
 
 * Create the index / new / show / edit / update / form logic
