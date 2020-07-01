@@ -57,6 +57,12 @@ p2.destroy
 p.delete # explain diff
 ```
 
+* Use seed and explain
+`rake db:seed`
+
+* Play with active record in console
+[doc](https://guides.rubyonrails.org/active_record_querying.html)
+
 * Explain scopes, show an example
 
 

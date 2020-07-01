@@ -5,6 +5,13 @@ class Project < ApplicationRecord
 
   before_validation :set_slug
 
+  scope :active, -> { where(archive: false) }
+  # scope :recent, ->(time) { where("created_at > ?", time) }
+
+  def self.recent(date = Date.yesterday)
+    where("created_at > ?", date)
+  end
+
   private
 
     def set_slug
