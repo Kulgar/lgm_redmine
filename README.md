@@ -36,6 +36,9 @@ Do a bundle install, check if it is running ok
 * Create a controller and an action
 * Create a view
 * Explain rescue_from
+
+### Models
+
 * Generate a model, explain what it does (with a published thing)
 `rails g model Project title:string archive:boolean description:text`
 `rake db:create`
@@ -65,9 +68,16 @@ p.delete # explain diff
 
 * Explain scopes, show an example
 
+**Exercice 1**
 
-* Let them generate another model with a validation and a scope
-* Let them create the tasks logic
+* Create the Task model, with a title, a content and a priority (integer)
+* Add a seed to create some tasks
+* Add a validation (a task should have a title, and a priority from 0 to 5)
+* Add a two scopes:
+* one named most_importants (show tasks with priority 4 or 5)
+* one named by_priority (to order tasks by priority)
+
+### Views
 
 * Explain how the layout works, show content_for? / content_for & yield(...)
 * Explain routes.rb, show rails routes / rails routes -g, add a resources, show difference with only, except. Add some member/collection routes. Explain admin namespace
