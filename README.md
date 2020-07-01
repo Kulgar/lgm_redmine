@@ -80,6 +80,9 @@ p.delete # explain diff
 ### Views and controllers
 
 * Explain how the layout works, show content_for? / content_for & yield(...)
+* Replace with a @variable
+* Add some style
+* Explain helpers
 * Explain partials
 * Explain routes.rb, show rails routes / rails routes -g, add a resources, show difference with only, except. Add some member/collection routes. Explain admin namespace
 

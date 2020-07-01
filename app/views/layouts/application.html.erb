@@ -22,15 +22,17 @@
       <h1>LGM Redmine</h1>
     </header>
 
-    <% if content_for?(:sidebar) %>
-      <div class="sidebar">
-        <%#= yield(:sidebar) %>
-        <%= content_for(:sidebar) %>
-      </div>
-    <% end %>
-    <main>
-      <%= yield %>
-    </main>
+    <div class="main-content">
+      <% if content_for?(:sidebar) %>
+        <div class="sidebar">
+          <%#= yield(:sidebar) %>
+          <%= content_for(:sidebar) %>
+        </div>
+      <% end %>
+      <main>
+        <%= yield %>
+      </main>
+    </div>
 
     <footer>
       Copyright <%= Time.current.year %>

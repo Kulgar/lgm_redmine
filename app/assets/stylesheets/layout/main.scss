@@ -1,0 +1,15 @@
+.main-content {
+  display: flex;
+  justify-content: space-between;
+
+  .sidebar {
+    min-width: 15%;
+    border-right: 1px solid #bbb;
+  }
+
+  main {
+    padding: 1rem;
+    flex-grow: 1;
+    height: 80vh;
+  }
+}

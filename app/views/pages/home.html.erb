@@ -1,8 +1,10 @@
-<% content_for(:title, "Home page") %>
-<% content_for(:body_class, "home-page") %>
+<% content_for(:title, @title) %>
+<% content_for(:body_class, @title&.parameterize) %>
 
 <% content_for :sidebar do %>
   <ul>
-    <li>Home page</li>
+    <li><%= @title %></li>
   </ul>
 <% end %>
+
+Welcome !
