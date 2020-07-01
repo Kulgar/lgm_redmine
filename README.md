@@ -50,6 +50,13 @@ Do a bundle install, check if it is running ok
 [doc](https://guides.rubyonrails.org/active_record_migrations.html)
 
 * Explain callbacks, show an example
+```ruby
+p = Project.create(title: "Super project")
+p2 = Project.create(title: SecureRandom::hex(64))
+p2.destroy
+p.delete # explain diff
+```
+
 * Explain scopes, show an example
 
 
