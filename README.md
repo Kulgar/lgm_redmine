@@ -84,6 +84,8 @@ These can be used with the `rails new` command:
 * Add a lib through webpacker
 * Action Cable
 * Active Job
+* Use another db
+* logger
 
 ### What gems do I use?
 

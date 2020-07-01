@@ -1,1 +1,8 @@
+<% unless flash.empty? %>
+  <%= flash.class %>
+  <% flash.each do |key, value| %>
+    <p class="<%= key %>"><%= value %></p>
+  <% end %>
+<% end %>
+
 <h1>LGM Redmine</h1>
