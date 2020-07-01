@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      <%= content_for(:title) %>
-    </title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= render "head" %>
 
   <body class="<%= content_for?(:body_class) ? content_for(:body_class) : "body" %>">
-    <header>
-      <% unless flash.empty? %>
-        <%= flash.class %>
-        <% flash.each do |key, value| %>
-          <p class="<%= key %>"><%= value %></p>
-        <% end %>
-      <% end %>
-      <h1>LGM Redmine</h1>
-    </header>
+    <%= render "header" %>
 
     <div class="main-content">
       <% if content_for?(:sidebar) %>

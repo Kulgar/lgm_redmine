@@ -1,0 +1,6 @@
+<div id="flash-wrapper">
+  <%# flash.class %>
+  <% flash.each do |key, value| %>
+    <p class="<%= key %>"><%= value %></p>
+  <% end %>
+</div>
