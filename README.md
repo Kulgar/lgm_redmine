@@ -77,20 +77,24 @@ p.delete # explain diff
 * one named most_importants (show tasks with priority 4 or 5)
 * one named by_priority (to order tasks by priority)
 
-### Views
+### Views and controllers
 
 * Explain how the layout works, show content_for? / content_for & yield(...)
+* Explain partials
 * Explain routes.rb, show rails routes / rails routes -g, add a resources, show difference with only, except. Add some member/collection routes. Explain admin namespace
 
 * Create the index / new / show / edit / update / form logic
-* Explain partials (through forms)
-* Explain how CSS / JS work while at it, display a logo somewhere
 * Show byebug
+
+* Explain how CSS / JS work while at it, display a logo somewhere
 * Let them handle the logic for tasks
 * Ask them to add a file input in the form and display that attachment in the show page
 
+### Associations
+
+* Explain associations, associate user and the other data, add a "private" part (only viewable by current user)
 * Add tasks number in projects index, explain N+1 problem and its solution (2 solutions, with includes & counter_cache)
-* Explain scaffold
+* Explain scaffold, create comments (associated to tasks)
 * Explain what it creates by default (and rails formats)
 
 * Explain rubygems, Gemfile & bundler, launch doc server: `gem server`, if no doc: `gem rdoc --all`
@@ -100,8 +104,6 @@ p.delete # explain diff
 
 * We now have authentication
 * Add some authed part, with some secret data (see everything, even the !published)
-
-* Explain associations, associate user and the other data, add a "private" part (only viewable by current user)
 
 ## Some other topics:
 

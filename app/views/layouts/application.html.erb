@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LgmRedmine</title>
+    <title>
+      <%= content_for(:title) %>
+    </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +11,29 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= content_for?(:body_class) ? content_for(:body_class) : "body" %>">
+    <header>
+      <% unless flash.empty? %>
+        <%= flash.class %>
+        <% flash.each do |key, value| %>
+          <p class="<%= key %>"><%= value %></p>
+        <% end %>
+      <% end %>
+      <h1>LGM Redmine</h1>
+    </header>
+
+    <% if content_for?(:sidebar) %>
+      <div class="sidebar">
+        <%#= yield(:sidebar) %>
+        <%= content_for(:sidebar) %>
+      </div>
+    <% end %>
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      Copyright <%= Time.current.year %>
+    </footer>
   </body>
 </html>

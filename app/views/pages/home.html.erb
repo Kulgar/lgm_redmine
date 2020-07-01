@@ -1,8 +1,8 @@
-<% unless flash.empty? %>
-  <%= flash.class %>
-  <% flash.each do |key, value| %>
-    <p class="<%= key %>"><%= value %></p>
-  <% end %>
-<% end %>
+<% content_for(:title, "Home page") %>
+<% content_for(:body_class, "home-page") %>
 
-<h1>LGM Redmine</h1>
+<% content_for :sidebar do %>
+  <ul>
+    <li>Home page</li>
+  </ul>
+<% end %>
