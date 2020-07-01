@@ -26,9 +26,10 @@ These can be used with the `rails new` command:
 * Explain what `rails new project` did
 * Discover Rails architecture
 
+* launch server: `rails server` or just `rails s` (options: -p 3001 -b 0.0.0.0)
 * Create a view
 * Generate a model, explain what it does (with a published thing)
-* Explain validations, show example in console
+* Explain validations, show example in console: `rails console` or just `rails c`
 * Explain callbacks, show an example
 * Explain scopes, show an example
 * Let them generate another model with a validation
@@ -51,7 +52,7 @@ These can be used with the `rails new` command:
 * Explain scaffold
 * Explain what it creates by default (and rails formats)
 
-* Explain rubygems, Gemfile & bundler
+* Explain rubygems, Gemfile & bundler, launch doc server: `gem server`, if no doc: `gem rdoc --all`
 * Install devise gem (for authentication), add a "admin" boolean
 * Install letter opener
 * Let them install devise masquerade, and create a user index with the masquerade link
