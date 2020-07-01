@@ -17,6 +17,11 @@ These can be used with the `rails new` command:
 * --webpacker=react : preconfigure project with webpack and a JS framework (react, vue, angular...)
 * --help : to see all the options
 
+## Before we begin
+
+Clone project from github
+Do a bundle install, check if it is running ok
+
 ## Course plan
 
 * Exercice solutions
@@ -32,15 +37,19 @@ These can be used with the `rails new` command:
 * Create a view
 * Explain rescue_from
 * Generate a model, explain what it does (with a published thing)
+`rails g model Project title:string archive:boolean description:text`
+`rake db:create`
+`rake db:migrate`
+
 * Explain validations, show example in console: `rails console` or just `rails c`
 * Explain callbacks, show an example
 * Explain scopes, show an example
 * Explain migrations, generate a new migration to edit previously created table
+
 * Let them generate another model with a validation and a scope
+* Let them create the tasks logic
 
-* Let them create the tasks controller
 * Explain how the layout works, show content_for? / content_for & yield(...)
-
 * Explain routes.rb, show rails routes / rails routes -g, add a resources, show difference with only, except. Add some member/collection routes. Explain admin namespace
 
 * Create the index / new / show / edit / update / form logic
