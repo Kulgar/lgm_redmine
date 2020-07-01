@@ -41,8 +41,14 @@ Do a bundle install, check if it is running ok
 `rake db:create`
 `rake db:migrate`
 
-* Explain validations, show example in console: `rails console` or just `rails c` - show error because of database not null constraint, [doc](https://guides.rubyonrails.org/active_record_validations.html#validation-helpers)
-* Explain migrations, generate a new migration to edit previously created table
+* Explain validations, show example in console: `rails console` or just `rails c` - show error because of database not null constraint
+[doc](https://guides.rubyonrails.org/active_record_validations.html#validation-helpers)
+
+* Explain migrations, generate a new migration to edit previously created table:
+`rails g migration add_slug_to_projects 'slug:string{60}'`
+`rake db:migrate`
+[doc](https://guides.rubyonrails.org/active_record_migrations.html)
+
 * Explain callbacks, show an example
 * Explain scopes, show an example
 
