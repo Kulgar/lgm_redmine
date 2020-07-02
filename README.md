@@ -118,7 +118,21 @@ p.delete # explain diff
 * Add tasks number in projects index
 * Explain N+1 problem and its solution (2 solutions, with includes & counter_cache)
 * Explain diff between .length .count .size (maybe with .explain)
+* Nested tasks, usefull partial, counter cache, moving tasks and a bit of coffee
 
+**Exercice 4**
+
+* Generate a new Category model using scaffold, with just a name:string property
+* Create a join table between categories and projects, command:
+```bash
+rails g migration CreateJoinTableCategoryProject category project
+```
+
+* Add a select field in project form to select a category
+* Add links to each category in the sidebar (under application layout)
+* Add a projects list in the category show page
+
+### Gems!
 
 * Explain rubygems, Gemfile & bundler, launch doc server: `gem server`, if no doc: `gem rdoc --all`
 * Install devise gem (for authentication), add a "admin" boolean
