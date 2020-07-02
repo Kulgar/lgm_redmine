@@ -1,4 +1,7 @@
 class Project < ApplicationRecord
+  # bi-directional associations: https://guides.rubyonrails.org/association_basics.html#bi-directional-associations
+  has_many :tasks, inverse_of: :project, dependent: :destroy
+  # has_one :task
 
   validates :title, presence: true
   validates :slug, presence: true, length: { maximum: 60 }

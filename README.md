@@ -106,6 +106,14 @@ p.delete # explain diff
 ### Associations
 
 * Explain associations, associate project and tasks
+* Explain build, create (with has_one / has_many)
+* Explain:
+
+```ruby
+.where().first_or_create
+.find_or_create_by()
+```
+
 * Add tasks number in projects index, explain N+1 problem and its solution (2 solutions, with includes & counter_cache)
 * Explain what it creates by default (and rails formats)
 
