@@ -164,14 +164,13 @@ rails g migration CreateJoinTableCategoryProject category project
 * Send a notification to users linked to a project when a task is created (explain Action Mailer), add an attachment
 * Explain TDD
 * Explain translations (i18n)
-
-## Some other topics:
-
-* Explain how to create API
-* Explain documentation
+* Show usual gems
 
 ## If we have time:
 
+* Explain how to create API
+* Explain documentation
+* Use another db
 * Explain rails/rake tasks (and create one - for cronjobs for instance)
 * Explain turbolinks
 * Explain concerns
@@ -181,7 +180,6 @@ rails g migration CreateJoinTableCategoryProject category project
 * Add a lib through webpacker
 * Action Cable
 * Active Job
-* Use another db
 * logger
 
 ### What gems do I use?
