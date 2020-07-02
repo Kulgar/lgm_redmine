@@ -5,6 +5,6 @@ class AdminController < ApplicationController
   private
 
     def is_admin?
-      raise NotAuthorized unless current_user.admin?
+      raise NotAuthorized unless current_user&.admin?
     end
 end

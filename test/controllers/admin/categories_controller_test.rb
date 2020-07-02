@@ -1,8 +1,14 @@
 require 'test_helper'
 
+# https://github.com/heartcombo/devise#integration-tests
+
 class Admin::CategoriesControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers # Rails >= 5
+
   setup do
     @category = categories(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do
@@ -20,7 +26,7 @@ class Admin::CategoriesControllerTest < ActionDispatch::IntegrationTest
       post admin_categories_url, params: { category: { name: @category.name } }
     end
 
-    assert_redirected_to category_url(Category.last)
+    assert_redirected_to admin_category_url(Category.last)
   end
 
   test "should show category" do
@@ -35,7 +41,7 @@ class Admin::CategoriesControllerTest < ActionDispatch::IntegrationTest
 
   test "should update category" do
     patch admin_category_url(@category), params: { category: { name: @category.name } }
-    assert_redirected_to category_url(@category)
+    assert_redirected_to admin_category_url(@category)
   end
 
   test "should destroy category" do
