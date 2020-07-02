@@ -152,6 +152,12 @@ rails g migration CreateJoinTableCategoryProject category project
 * Add some authed part, with some secret data
 * Display a logo somewhere
 
+**Exercice 5**
+
+* Add an attachment to [projects](https://guides.rubyonrails.org/active_storage_overview.html#attaching-files-to-records)
+* Only allow admin to see that field in the form
+* How would you prevent the update of that field from the controller by normal/guest users?
+
 
 ## Some other topics:
 
