@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   # resources :tasks
 
+  namespace :admin do
+    resources :categories
+  end
+
   resources :projects do
     resources :tasks
   end
