@@ -65,7 +65,12 @@ class TasksController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_task
-      @task = @project.tasks.find(params[:id])
+      if @project.tasks.exists?(params[:id])
+        @task = @project.tasks.find(params[:id])
+      else
+        task = Task.find(params[:id])
+        redirect_to [task.project, task], alert: "Cette tâche a été déplacée dans un autre projet et vous avez été redirigé"
+      end
     end
 
     def set_project
