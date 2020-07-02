@@ -3,8 +3,11 @@
   <nav>
     <%= link_to "Projects", projects_path %>
     <%# link_to "Tasks", tasks_path %>
-    <%= link_to 'Categories', admin_categories_path %>
     <% if user_signed_in? %>
+      <% if current_user.admin? %>
+        <%= link_to 'Categories', admin_categories_path %>
+      <% end %>
+
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to "Sign in", new_user_session_path %>

@@ -147,10 +147,9 @@ rails g migration CreateJoinTableCategoryProject category project
 * Install devise gem (for authentication), add a "admin" boolean
 * add a "private" part (only viewable by current user)
 * Install letter opener
-* Let them install devise masquerade, and create a user index with the masquerade link
-
 * We now have authentication
-* Add some authed part, with some secret data (see everything, even the !published)
+
+* Add some authed part, with some secret data (see everything, even the !archive)
 
 * Ask them to add a file input in the form and display that attachment in the show page
 * Explain how JS work, display a logo somewhere
