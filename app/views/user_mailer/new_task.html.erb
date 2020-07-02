@@ -1,5 +1,7 @@
 <h1>Bonjour <%= @user.email %></h1>
 
+<%= image_tag @cover_url %>
+
 <p>
   Une nouvelle tâche a été créée pour le projet <%= link_to @project.title, @url %>
 </p>
