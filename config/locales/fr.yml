@@ -29,8 +29,16 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+fr:
+  hello: "Bonjour"
   pages:
     home:
-      info: "Important info"
+      info: "Info importantes"
+  activerecord:
+    attributes:
+      project:
+        title: "Titre"
+        archive: "Archivé?"
+        description: Description
+        cover: Couverture
+        category_ids: Catégories

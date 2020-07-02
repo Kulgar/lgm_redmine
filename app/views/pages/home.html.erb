@@ -7,4 +7,10 @@
   </ul>
 <% end %>
 
-Welcome <%= current_user&.email %> !
+<%= t("hello") %> <%= current_user&.email %> !
+
+<p>
+  <%= t(".info") %>
+</p>
+
+<%= I18n.locale %>
