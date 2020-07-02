@@ -129,9 +129,17 @@ rails g migration CreateJoinTableCategoryProject category project
 ```
 
 * Use the [has_and_belongs_to_many](https://guides.rubyonrails.org/association_basics.html#the-has-and-belongs-to-many-association) association
-* Add a select field in project form to select a category
-* Add links to each category in the sidebar (under application layout)
+* Create a category (from console or web app)
+* Try: `Category.first.projects << Project.last` in a **rails console** and try to understand what it does
+* Try another time the same command... see what happens
+* How could we prevent this problem? - maybe with [this?](https://guides.rubyonrails.org/association_basics.html#methods-added-by-has-and-belongs-to-many-collection-exists-questionmark)
+* Remove data with: `Category.first.projects.delete(Project.last)`
 * Add a projects list in the category show page
+
+**-- End ex 4 --**
+
+* Explain how to add a select field in project form to select several categories
+
 
 ### Gems!
 

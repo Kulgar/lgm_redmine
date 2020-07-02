@@ -26,6 +26,11 @@
     <%= form.text_area :description %>
   </div>
 
+  <div class="field">
+    <%= form.label :category_ids %>
+    <%= form.select :category_ids, Category.all.collect {|p| [ p.name, p.id ] }, { prompt: "Select categories" }, { multiple: true } %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
