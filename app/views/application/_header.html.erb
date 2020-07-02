@@ -1,5 +1,7 @@
 <header>
-  <h1>LGM Redmine</h1>
+  <%= link_to root_path do %>
+    <%= image_tag "logo.png", alt: "LGM logo" %>
+  <% end %>
   <nav>
     <%= link_to "Projects", projects_path %>
     <%# link_to "Tasks", tasks_path %>

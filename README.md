@@ -149,10 +149,8 @@ rails g migration CreateJoinTableCategoryProject category project
 * Install letter opener
 * We now have authentication
 
-* Add some authed part, with some secret data (see everything, even the !archive)
-
-* Ask them to add a file input in the form and display that attachment in the show page
-* Explain how JS work, display a logo somewhere
+* Add some authed part, with some secret data
+* Display a logo somewhere
 
 
 ## Some other topics:
