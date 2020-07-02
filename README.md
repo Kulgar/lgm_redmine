@@ -102,6 +102,7 @@ p.delete # explain diff
 
 **Solution**
 * Explain scaffold, use it to solve the exercice
+* Explain what it creates by default (and rails formats)
 
 ### Associations
 
@@ -114,8 +115,10 @@ p.delete # explain diff
 .find_or_create_by()
 ```
 
-* Add tasks number in projects index, explain N+1 problem and its solution (2 solutions, with includes & counter_cache)
-* Explain what it creates by default (and rails formats)
+* Add tasks number in projects index
+* Explain N+1 problem and its solution (2 solutions, with includes & counter_cache)
+* Explain diff between .length .count .size (maybe with .explain)
+
 
 * Explain rubygems, Gemfile & bundler, launch doc server: `gem server`, if no doc: `gem rdoc --all`
 * Install devise gem (for authentication), add a "admin" boolean

@@ -9,6 +9,7 @@
       <th>Slug</th>
       <th>Archive</th>
       <th>Description</th>
+      <th>NB° Tasks</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,12 @@
         <td><%= project.slug %></td>
         <td><%= project.archive %></td>
         <td><%= project.description %></td>
+        <td>
+          <%#= project.tasks.count %>
+          <%= project.tasks.length %>
+          <%#= project.tasks.size %>
+        </td>
+
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
