@@ -128,6 +128,7 @@ p.delete # explain diff
 rails g migration CreateJoinTableCategoryProject category project
 ```
 
+* Use the [has_and_belongs_to_many](https://guides.rubyonrails.org/association_basics.html#the-has-and-belongs-to-many-association) association
 * Add a select field in project form to select a category
 * Add links to each category in the sidebar (under application layout)
 * Add a projects list in the category show page
