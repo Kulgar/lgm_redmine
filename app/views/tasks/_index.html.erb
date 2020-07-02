@@ -28,7 +28,9 @@
   </tbody>
 </table>
 
-<br>
+<% unless local_assigns[:hide_links] %>
+  <br>
 
-<%= link_to 'New Task', new_project_task_path(@project) %> |
-<%= link_to 'Back to project', @project %>
+  <%= link_to 'New Task', new_project_task_path(@project) %> |
+  <%= link_to 'Back to project', @project %>
+<% end %>
