@@ -158,6 +158,10 @@ rails g migration CreateJoinTableCategoryProject category project
 * Only allow admin to see that field in the form
 * How would you prevent the update of that field from the controller by normal/guest users?
 
+**-- End ex5 --**
+
+* Explain how to display the image
+
 
 ## Some other topics:
 
@@ -165,7 +169,6 @@ rails g migration CreateJoinTableCategoryProject category project
 * Explain translations (i18n)
 * Explain how to create API
 * Explain documentation
-* Explain environments
 * Explain TDD
 
 ## If we have time:

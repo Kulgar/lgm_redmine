@@ -4,6 +4,8 @@ class Project < ApplicationRecord
   has_and_belongs_to_many :categories
   # has_one :task
 
+  has_one_attached :cover
+
   validates :title, presence: true
   validates :slug, presence: true, length: { maximum: 60 }
 

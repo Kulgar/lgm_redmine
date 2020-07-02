@@ -69,6 +69,8 @@ class ProjectsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def project_params
-      params.require(:project).permit(:title, :archive, :description, category_ids: [])
+      permitted = [:title, :archive, :description, { category_ids: [] }]
+      permitted << :cover if current_user&.admin?
+      params.require(:project).permit(permitted)
     end
 end

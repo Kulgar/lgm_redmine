@@ -26,6 +26,13 @@
     <%= form.text_area :description %>
   </div>
 
+  <% if true #current_user&.admin? %>
+    <div class="field">
+      <%= form.label :cover %>
+      <%= form.file_field :cover %>
+    </div>
+  <% end %>
+
   <div class="field">
     <%= form.label :category_ids %>
     <%= form.select :category_ids, Category.all.collect {|p| [ p.name, p.id ] }, { prompt: "Select categories" }, { multiple: true } %>

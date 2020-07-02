@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag(@project.cover, style: "max-height: 100px;") if @project.cover.attached? %>
+
 <p>
   <strong>Title:</strong>
   <%= @project.title %>
@@ -14,6 +16,7 @@
   <strong>Description:</strong>
   <%= @project.description %>
 </p>
+
 <p>
   <strong>Categories:</strong>
   <%= @project.categories.map(&:name).join(" | ") %>
