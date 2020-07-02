@@ -15,7 +15,7 @@
   <%= @project.description %>
 </p>
 
-<%= render "tasks/index", tasks: @project.tasks, hide_links: true %>
+<%= render "tasks/index", tasks: @project.tasks.by_priority, hide_links: true %>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'New task', new_project_task_path(@project) %> |

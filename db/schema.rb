@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_01_155156) do
+ActiveRecord::Schema.define(version: 2020_07_02_165306) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title", null: false
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_07_01_155156) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug", limit: 60
+    t.integer "tasks_count"
   end
 
   create_table "tasks", force: :cascade do |t|
