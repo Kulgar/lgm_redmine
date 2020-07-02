@@ -22,7 +22,7 @@ class Project < ApplicationRecord
   private
 
     def set_slug
-      self.slug = self.title.first(60).parameterize
+      self.slug = self.title.first(60).parameterize if self.title
     end
 
 end

@@ -161,15 +161,14 @@ rails g migration CreateJoinTableCategoryProject category project
 **-- End ex5 --**
 
 * Explain how to display the image
-
+* Send a notification to users linked to a project when a task is created (explain Action Mailer), add an attachment
+* Explain TDD
+* Explain translations (i18n)
 
 ## Some other topics:
 
-* Send a notification to users linked to a project when a task is created (explain Action Mailer), add an attachment
-* Explain translations (i18n)
 * Explain how to create API
 * Explain documentation
-* Explain TDD
 
 ## If we have time:
 
