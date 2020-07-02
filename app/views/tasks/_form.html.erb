@@ -28,7 +28,8 @@
 
   <div class="field">
     <%= form.label :project_id %>
-    <%= form.text_field :project_id %>
+    <%#= form.select :project_id, collection: Project.pluck(:title, :id) %>
+    <%= form.select :project_id, options_from_collection_for_select(Project.all, "id", "title", task.project_id) %>
   </div>
 
   <div class="actions">
