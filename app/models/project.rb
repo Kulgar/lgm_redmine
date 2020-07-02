@@ -2,6 +2,7 @@ class Project < ApplicationRecord
   # bi-directional associations: https://guides.rubyonrails.org/association_basics.html#bi-directional-associations
   has_many :tasks, inverse_of: :project, dependent: :destroy
   has_and_belongs_to_many :categories
+  has_and_belongs_to_many :users
   # has_one :task
 
   has_one_attached :cover
